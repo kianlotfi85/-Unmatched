@@ -6,7 +6,7 @@ class Space
 public:
 
 private:
-    int space_number; // the Number of the Space
+    int id; // the id of the Space
     
     
 };
