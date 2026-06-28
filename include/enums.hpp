@@ -1,7 +1,7 @@
 #ifndef ENUMS_H
 #define ENUMS_H
 
-enum Zone 
+enum class Zone 
 {
     BLUE,
     BROWN,
