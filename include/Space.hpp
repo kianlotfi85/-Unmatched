@@ -5,6 +5,11 @@
 class Space
 {
 public:
+    Space(int id, std::vector<int> neighbors, std::vector<Zone> zones );
+    const int get_id() const; 
+    void set_id( const int ); 
+
+
 
 private:
 
