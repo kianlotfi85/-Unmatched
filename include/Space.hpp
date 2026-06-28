@@ -37,7 +37,7 @@ private:
     std::vector<Zone> zones; // the zones that Space is part of them
     std::vector<int> neighbors; // Vector of Space neighbors.
    
-    //booleans 
+    
     bool SecretPassage = false; // is the Space secret passage?
 };
 

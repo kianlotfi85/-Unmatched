@@ -1,6 +1,5 @@
 #include "../include/Space.hpp"
 
-// getters
 int Space::get_id() const
 {
     return id;
@@ -15,9 +14,6 @@ const bool Space::isEmpty() const
     return false;
 }
 
-
-
-// setters
 void Space::setOccupant( Fighter* occupant )
 {
     this -> occupant = occupant;
