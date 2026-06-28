@@ -16,3 +16,8 @@ void Space::set_id(int id)
 {
     this -> id = id;
 }
+
+void Space::addZone(Zone newZone)
+{
+    zones.push_back(newZone);
+}
