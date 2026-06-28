@@ -8,38 +8,28 @@
 class Space
 {
 public:
-
     Space(int id, std::vector<int> neighbors, std::vector<Zone> zones );
 
-    
     void set_id( int ); 
     void setOccupant( Fighter* occupant ); 
     void addZone(Zone); 
     void setNeighbors( int neighbor ); 
 
-    
-    int get_id() const; 
+    int get_id() const;
     const bool isEmpty() const; 
     bool isInZone(Zone z) const;
     bool isSecretPassageGroup() const;
     Fighter* getOccupant() const;
     std::vector<int> getNeighbors() const; 
-
-
-private:
-    
+private:   
     int id; 
-
    
     Fighter* occupant = nullptr;
 
-    
     std::vector<Zone> zones; // the zones that Space is part of them
-    std::vector<int> neighbors; // Vector of Space neighbors.
-   
+    std::vector<int> neighbors; // Vector of Space neighbors.   
     
     bool SecretPassage = false; // is the Space secret passage?
 };
-
 
 #endif
