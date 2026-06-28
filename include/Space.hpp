@@ -12,20 +12,23 @@ public:
     Space(int id, std::vector<int> neighbors, std::vector<Zone> zones );
 
     //Setters
-    void set_id( const int ); 
+    void set_id( int ); 
     void setOccupant( Fighter* occupant );
 
     // Getters 
-    const int get_id() const; 
+    int get_id() const; 
     const bool isEmpty() const;
     bool isInZone(Zone z) const;
-    bool isSecretPassage() const;
     Fighter* getOccupant() const; // oh who is in my Space 
+    bool isSecretPassageGroup() const;
 
 
 private:
     //integers
     int id; // the id of the Space
+
+    // Fighter
+    Fighter* occupant = nullptr;
 
     // vectors
     std::vector<Zone> zones; // the zones that Space is part of them
