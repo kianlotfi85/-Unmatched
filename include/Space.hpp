@@ -12,13 +12,13 @@ public:
     Space(int id, std::vector<int> neighbors, std::vector<Zone> zones );
 
     //Setters
-    void set_id( int ); 
-    void setOccupant( Fighter* occupant );
-    void addZone(Zone);
-    void setNeighbors( int neighbors );
+    void set_id( int ); // note : done
+    void setOccupant( Fighter* occupant ); // note : done
+    void addZone(Zone); // note : done
+    void setNeighbors( int neighbor ); // note : done 
 
     // Getters 
-    int get_id() const; 
+    int get_id() const; // note : done
     const bool isEmpty() const;
     bool isInZone(Zone z) const;
     bool isSecretPassageGroup() const;
