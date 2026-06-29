@@ -9,13 +9,13 @@ class Map
 public:
 
     bool canMove( int from, int to ) const;
-    std::vector<int> getReahableSpaces( int fromID, int moves) const;
+    std::vector<int> getReachableSpaces( int fromID, int maxMoves); // BFS algorithm
     int getDistance(int from, int to) const;
     void moveFighter(int from, int to) const;
 private:
 
     std::vector<Space> spaces;
-    std::vector<int> secretPassageSpaces;
+    std::vector<int> secretPassageSpaces; // List of secretPassages
 
 };
 
