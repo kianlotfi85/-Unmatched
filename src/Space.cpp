@@ -33,3 +33,8 @@ void Space::setNeighbors( int newNeighbor )
 {
     neighbors.push_back(newNeighbor);
 }
+
+void Space::setPassageSecret( bool isOrNot )
+{
+    this -> SecretPassage = isOrNot;
+}

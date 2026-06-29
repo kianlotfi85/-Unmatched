@@ -11,9 +11,10 @@ public:
     Space(int id, std::vector<int> neighbors, std::vector<Zone> zones );
 
     void set_id( int ); 
-    void setOccupant( Fighter* occupant ); 
+    void setOccupant( Fighter* ); 
     void addZone(Zone); 
-    void setNeighbors( int neighbor ); 
+    void setNeighbors( int ); 
+    void setPassageSecret( bool );
 
     int get_id() const;
     const bool isEmpty() const; 
