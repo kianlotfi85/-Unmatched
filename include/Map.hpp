@@ -7,7 +7,7 @@
 class Map
 {
 public:
-
+    Map();
     bool canMove( int from, int to ) const;
     std::vector<int> getReachableSpaces( int fromID, int maxMoves); // BFS algorithm
     int getDistance(int from, int to) const;
